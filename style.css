@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  min-height:100vh;
+  display: flex;
+  align-items: center;
+}
+.container{
+  margin: 0 auto;
+  max-width: 960px;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 12px;
+  margin: 2em;
+  overflow: hidden;
+
+}
+.box{
+  padding: 40px;
+}
+.box h2{
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aliceblue;
+  font-size: 20px;
+line-height: 3.5;
+
+}
+.box a{
+  text-decoration: none;
+
+  background-color:whitesmoke ;
+ padding: 10px 25px;
+ border-radius: 18px;
+ display: inline-block;
+ border: 3px solid hsla(0, 0%, 100%, 0.75);
+ transition: .5s ease-in-out;
+}
+.box p{
+  color: white;
+  padding-bottom: 35px;
+}
+.box-1{
+  background-color: hsl(31, 77%, 52%);
+}
+.box-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.box-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+.box-1 a{
+  color:hsl(31, 77%, 52%);
+}
+.box-2 a {
+  color: hsl(184, 100%, 22%);
+}
+.box-3 a {
+  color: hsl(179, 100%, 13%);
+}
+.box a:hover{
+  background: transparent;
+  color: white;
+}
+@media only screen and (max-width:768px){
+.wrapper{
+  grid-template-columns: 1fr;
+}
+}
+@media only screen  and (max-width:425px){
+  .wrapper{
+    margin: 1rem;
+  }
+}
